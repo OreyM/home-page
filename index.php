@@ -304,6 +304,22 @@
     </div>
 </section>
 
+<!-- Banners section -->
+<section id="advertising-section" class="hide-on-med-and-down">
+    <div class="container">
+        <div class="row">
+            <div class="col m12">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <?php foreach ($homePage->advertising as $advertising): ?>
+                    <div>
+                        <?php $advertising->banner ?>
+                    </div>
+                <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+</section>
+
 <!--Scripts-->
 <script type="text/javascript" src="<?= $siteSettings->generalUrl; ?>libs/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="<?= $siteSettings->generalUrl; ?>libs/materialize/js/materialize.min.js"></script>
